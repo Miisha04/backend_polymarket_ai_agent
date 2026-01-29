@@ -1,0 +1,17 @@
+[workspace]
+authors = ["michael <misha.gladkov.04@gmail.com>"]
+channels = ["conda-forge"]
+name = "backend"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+start = "uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload"
+
+[dependencies]
+fastapi = ">=0.128.0,<0.129"
+uvicorn = ">=0.40.0,<0.41"
+sqlalchemy = ">=2.0.46,<3"
+asyncpg = ">=0.31.0,<0.32"
+psycopg2-binary = ">=2.9.10,<3"
+aiohttp = ">=3.13.3,<4"

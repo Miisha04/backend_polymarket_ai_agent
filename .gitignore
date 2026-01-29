@@ -1,0 +1,15 @@
+# Файлы окружения и секреты
+.env
+*.env
+
+# Папки виртуальных окружений
+.venv/
+.pixi/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Другое (кэш VSCode, тестов и т.д.)
+.vscode/
+.pytest_cache/
